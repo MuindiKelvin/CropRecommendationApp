@@ -8,6 +8,11 @@ from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+import subprocess
+
+subprocess.check_call(["pip", "install", "scikit-learn"])
+
+
 # Load the dataset
 df = pd.read_csv("Data/Crop_recommendation.csv")
 
